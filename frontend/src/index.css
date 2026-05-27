@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-bg { position: relative; overflow: hidden; }
+.chat-bg::before,
+.chat-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+.chat-bg::before {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%);
+  top: -100px; right: -80px;
+  animation: orb-pulse 8s ease-in-out infinite;
+}
+.chat-bg::after {
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(139,92,246,0.14) 0%, transparent 70%);
+  bottom: -80px; left: -60px;
+  animation: orb-pulse 8s ease-in-out infinite reverse;
+}
+
+.chat-scroll::-webkit-scrollbar        { width: 6px; }
+.chat-scroll::-webkit-scrollbar-track  { background: transparent; }
+.chat-scroll::-webkit-scrollbar-thumb  { background: rgba(99,102,241,0.25); border-radius: 3px; }
+.chat-scroll::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.45); }

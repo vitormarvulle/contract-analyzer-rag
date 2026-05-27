@@ -1,0 +1,55 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+build/
+.eggs/
+
+# ── Ambientes virtuais ────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Variáveis de ambiente ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Banco de dados vetorial ───────────────────────────────────────────────────
+backend/chroma_db/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+.npm/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Sistema operacional ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs e editores ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Pytest / coverage ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
